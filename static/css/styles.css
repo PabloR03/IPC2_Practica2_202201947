@@ -1,51 +1,65 @@
 body {
-    background-color: #14499a; /* Cambia #EFEFEF al color que desees utilizar */
-}
-.titulos {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 20px;
-}
-.titulos p{
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Cambia #EFEFEF al color que desees utilizar */
 }
 
-.imagen {
-    float: center;
-    width: 200px; /* Ancho deseado */
-    height: 360px; /* Alto deseado */
-    border-radius: 50%; /* Esto crea una forma ovalada al establecer el radio de la esquina en el 50% del ancho y alto */
-    overflow: hidden; /* Recorta cualquier parte de la imagen que se salga de la forma ovalada */
-}
-.imagen img {
-    align-items:center ;
-    width: 100%; /* Asegura que la imagen se ajuste completamente al contenedor ovalado */
-    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+.Dividirdiv {
+    display: flex; /* Utilizar flexbox para alinear elementos en línea */
 }
 
-.contenedor {
-    padding: 20px;
+.ParteIzquierda {
+    width: 24%;
+    background-color: #00BFFF;
+    z-index: 999;
+}
+
+.ParteDerecha {
+    width: 75%;
+    background-color: #0093ee6f;
+    z-index: 999;
+}
+
+.Foto {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.Foto img {
+    display: block; /* Esto asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen dentro del contenedor */
+    max-width: 100%; /* Evita que la imagen se desborde del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+.Encabezado {
+    text-align: left;
     display: flex;
-}
-.infoPersonal {
-    flex: 1;
-    padding: 20px;
+    flex-direction: column;
+    align-items: left; /* Centrar horizontalmente */
+    justify-content: left; /* Centrar verticalmente */
 }
 
-.subtituloEstudios {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
-}
 .estudios {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.tablaHabilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.Nombre,
+.Carrera, 
+.FormacionAcademica, 
+.Habilidades{
+    text-align: center;
 }
 
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -53,33 +67,14 @@ body {
     overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
     font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c4ww{background-color:#cbcefb;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-s5xa{background-color:#9698ed;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-61xu{background-color:#cbcefb;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-c4ww{background-color:#FFD700;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-s5xa{background-color:#191970;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-61xu{background-color:#FFA500;border-color:inherit;text-align:left;vertical-align:top}
 
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
     overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
     font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-s5xa{background-color:#9698ed;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-61xu{background-color:#cbcefb;border-color:inherit;text-align:left;vertical-align:top}
-
-.hdehobies{
-    padding-left: 200px;
-    display: flex;
-}
-.hdehobies ul{
-    padding-left: 300px;
-}
-.subtitulos{
-    flex: 1;
-    padding: 50px;
-    padDing-left: 180px;
-    display: flex;
-}
-.hobies{
-    flex: 1;
-    display: flex;
-    padding-left: 300px;
-}
+.tg .tg-s5xa{background-color:#4169E1;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-61xu{background-color:#FFD700;border-color:inherit;text-align:left;vertical-align:top}
